@@ -26,7 +26,8 @@ This project demonstrates how to containerize a Spring Boot application and run 
 ./mvnw clean package
 # or
 ./gradlew build
-docker-compose up --build
+docker build -t dname/Iname:tag1
+docker-compose up 
 
 ---
 
