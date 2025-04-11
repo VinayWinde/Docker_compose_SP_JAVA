@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  db:
+    image: mysql:8.0.41
+    environment:
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: vini
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/MYSQL_DATABASE
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+
+    ports:
+      - 3308:3306
